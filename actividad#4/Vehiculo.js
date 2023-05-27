@@ -59,8 +59,8 @@ boton.addEventListener('click', function(e) {
     let combustible = document.getElementById("combustible").value;
     const coche1 = new Coche({marca:marca,modelo:modelo,velocidad:velocidad,combustible:combustible});
 
-    console.log(coche1.acelerar());
-    console.log(Vehiculo.convertirKmHEnMph(coche1.getVelocidad));
+    alert(coche1.acelerar());
+    alert(Vehiculo.convertirKmHEnMph(coche1.getVelocidad));
 
   // Mostrar el modal
     $('.modal').modal('show');
