@@ -54,13 +54,9 @@ class Perro extends Animal{
     }
 }
 
-document.addEventListener('click',(e)=>{
-    if(e.target.id=='sumit'){
-        enviar();
-    }
-})
-
-function enviar(){
+const boton = document.querySelector('#sumit');
+boton.addEventListener('click', e => { 
+    e.preventDefault();
     let nombre = document.getElementById("nombre").value;
     let edad = document.getElementById("edad").value;
     let raza = document.getElementById("raza").value;
@@ -68,6 +64,6 @@ function enviar(){
     alert(perro1.moverCola());
     alert(`El animal se llama ${perro1.getNombre}`);
     
-}
+});
 
 
