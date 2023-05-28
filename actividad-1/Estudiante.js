@@ -1,3 +1,4 @@
+import { Persona } from "./persona.js";
 export class Estudiante extends Persona{
     #carrera
     constructor(nombre,edad,genero,carrera){
@@ -5,10 +6,10 @@ export class Estudiante extends Persona{
         super(nombre,edad,genero);
         this.#carrera = carrera;
     }
-    setCarrera(carrera){
+    set setCarrera(carrera){
         this.#carrera = carrera;
     }
-    getCarrera(){
+    get getCarrera(){
         return this.#carrera;
     }
     estudiar(){
